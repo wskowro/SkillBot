@@ -42,7 +42,7 @@ async def nine_nine(ctx):
 @bot.command(name='hello', help='Commands thr bot to greet you')
 async def helloBot(ctx):
     
-    response = 'Hello, {ctx.author}'
+    response = 'Hello, ' + ctx.author.name
     await ctx.send(response)
     
     

@@ -4,10 +4,8 @@ from discord.ext import commands
 import random
 
 load_dotenv()
-#TOKEN = os.getenv('DISCORD_TOKEN')
-#GUILD = os.getenv('DISCORD_GUILD')
-TOKEN = "NDk0MzMyMzkyMzQyMDI4MzA5.W6rs6g.6l1aohio33Qr8mzM8hHySLxoHNg"
-GUILD = "Team Stealthy Bush"
+TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('DISCORD_GUILD')
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
@@ -22,14 +20,6 @@ async def on_ready():
         f'{client.user} is connected to the following guild: \n' 
         f'{guild.name} (id: {guild.id})'
     )
-
-    # just trying to debug here
-    #for guild in client.guilds:
-     #   for member in guild.members:
-    #        print(member.name, ' ')
-
-    #members = '\n - '.join([member.name for member in guild.members])
-    #print(f'Guild Members:\n - {members}')
     
 bot = commands.Bot(command_prefix='!')
 

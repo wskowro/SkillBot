@@ -30,10 +30,28 @@ async def nine_nine(ctx):
     brooklyn_99_quotes = [
         'I\'m the human form of the 💯 emoji.',
         'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
+        'Cool. Cool cool cool cool cool cool cool, ',
+        'no doubt no doubt no doubt no doubt.',
+        'Title of your sex tape.',
+        'Sarge, with all due respect, I am gonna completely ignore everything you just said.',
+        'I ate one string bean. It tasted like fish vomit. That was it for me.',
+        'The English language can not fully capture the depth and complexity of my thoughts, so I’m incorporating emojis into my speech to better express myself. Winky face.',
+        'A place where everybody knows your name is hell. You’re describing hell.',
+        'Cool, cool, cool, cool, cool. No doubt, no doubt, no doubt.',
+        'If I die, turn my tweets into a book.',
+        'Fine. but in protest, I’m walking over there extremely slowly!',
+        'Jake, why don’t you just do the right thing and jump out of a window?',
+        'I asked them if they wanted to embarrass you, and they instantly said yes.',
+        'Captain Wuntch. Good to see you. But if you’re here, who’s guarding Hades?',
+        'I’m playing Kwazy Cupcakes, I’m hydrated as hell, and I’m listening to Sheryl Crow. I’ve got my own party going on.',
+        'Anyone over the age of six celebrating a birthday should go to hell.',
+        'Captain, turn your greatest weakness into your greatest strength. Like Paris Hilton RE: her sex tape.',
+        'Jake, piece of advice: just give up. It’s the Boyle way. It’s why our family crest is a white flag.',
+        'Okay, no hard feelings, but I hate you. Not joking. Bye.',
+        'Hello unsolved case. Do you bring me joy? No, because you’re boring and you’re too hard. See ya.',
+        'Great, I’d like your $8-est bottle of wine, please.',
+        'I don’t want to hang out with some stupid baby who’s never met Jake.',
+        'Well, no one asked you. It’s a self-evaluation.'
     ]
 
     response = random.choice(brooklyn_99_quotes)

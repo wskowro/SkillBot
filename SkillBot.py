@@ -74,18 +74,14 @@ but you can subscribe to our news letter for updates of our newest content
 --> https://runpee.com/about-runpee/runpee-movie-newsletter/'''
 
 
-@client.event
+@bot.event
 async def on_message(message): 
   if message.author == client.user:
       return  
   # lower case message
   message_content = message.content.lower()  
-
-  
-  if message.content.startswith(f'$hello'):
-    await message.channel.send('Hello there! I\'m the bad robot you fart face.')
     
-  if f'$search' in message_content:
+  if f'!search' in message_content:
 
     key_words, search_words = page_web.key_words_search_words(message_content)
     result_links = page_web.search(key_words)
@@ -96,7 +92,6 @@ async def on_message(message):
        await message.channel.send(link)
     else:
       await message.channel.send(no_result_message)
+  await bot.process_commands(message)
     
-    
-#client.run(TOKEN)
 bot.run(TOKEN)

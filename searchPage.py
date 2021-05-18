@@ -3,8 +3,9 @@ from bs4 import BeautifulSoup
 
 class RunSearchPage:
   def __init__(self):
-        self.headers = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.3'}
+        self.headers = {'User-Agent':'Mozilla/5.0 (64-bit deb for Ubuntu/Debian) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.3'}
         self.url = 'https://runpee.com/?s='
+        print
 
   def key_words_search_words(self, user_message):
     words = user_message.split()[1:]
@@ -14,6 +15,7 @@ class RunSearchPage:
 
   def search(self, keywords):
     response = requests.get(self.url+keywords, headers = self.headers)
+    #response = requests.get(self.url+keywords)
     content = response.content
     soup = BeautifulSoup(content, 'html.parser')
     result_links = soup.findAll('a')

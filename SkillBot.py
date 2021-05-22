@@ -69,9 +69,10 @@ async def helloBot(ctx):
 page_web = searchPage.RunSearchPage()
 
 # no result message 
-no_result_message = '''Sorry, we can\'t find what you are searching for. We may not have written anything about it yet, 
-but you can subscribe to our news letter for updates of our newest content 
---> https://runpee.com/about-runpee/runpee-movie-newsletter/'''
+#no_result_message = '''Sorry, we can\'t find what you are searching for. We may not have written anything about it yet, 
+#but you can subscribe to our news letter for updates of our newest content 
+#--> https://runpee.com/about-runpee/runpee-movie-newsletter/'''
+no_result_message = "Error"
 
 
 @bot.event
